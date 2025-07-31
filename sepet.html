@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sepetim - Heybem Çarşı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <a href="index.html" class="logo-link">
+            <img src="img/logo.png" alt="Heybem Çarşı Logo" class="site-logo">
+        </a>
+        <h1>Heybem Çarşı</h1>
+        <div class="cart-info">
+            <a href="sepet.html" class="cart-link">
+                <img src="img/cart-icon.png" alt="Sepet">
+                <span id="sepet-sayaci">(0)</span>
+            </a>
+        </div>
+    </div>
+    <p><a href="index.html">&larr; Anasayfa</a></p>
+  </header>
+
+  <main>
+    <div class="sepet-container">
+      <h2>Alışveriş Sepeti</h2>
+      <ul class="sepet-listesi" id="sepet-urunleri">
+        </ul>
+      <div class="sepet-ozeti">
+        <div class="sepet-ozeti-baslik">Sipariş Özeti</div>
+        <div class="sepet-ozet-satir">
+          <span>Ara Toplam:</span>
+          <span id="ara-toplam-fiyat">0.00₺</span>
+        </div>
+        <div class="sepet-ozet-satir">
+          <span>Kargo:</span>
+          <span>Ücretsiz</span>
+        </div>
+        <div class="sepet-ozet-satir sepet-toplam-fiyat">
+          <span>Toplam:</span>
+          <span id="sepet-toplam-fiyat">0.00₺</span>
+        </div>
+        <button class="odeme-yap-btn" onclick="whatsappSiparisVer()">Ödeme Yap (WhatsApp)</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Heybem Çarşı | <a href="https://www.instagram.com/heybemcarsi/" target="_blank">Instagram</a></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
